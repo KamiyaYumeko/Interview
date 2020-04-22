@@ -8,8 +8,10 @@ int main()
 	// 1. 两数之和
 	vector<int> nums = { 3,2,3 };
 	Solution solution;
-	
-	solution.twoSum(nums, 6);
-	
+	auto n= solution.twoSum(nums, 6);	
+	for (int i = 0; i < n.size(); ++i)
+	{
+		cout << n[i]<<endl;
+	}
 	return 0;
 }
