@@ -37,3 +37,23 @@ int Solution::reverse(int x)
 	}
 	return res;
 }
+
+bool Solution::isPalindrome(int x)
+{
+	if(x<0)
+	{
+		return false;
+	}
+	else
+	{
+		unsigned i = x;
+		unsigned m = 0;
+		while (i > 0)
+		{
+			m = m * 10 + i % 10;
+			i /= 10;
+		}
+		return m == x;
+
+	}
+}
