@@ -86,4 +86,19 @@ int Solution::maxSubArray(std::vector<int>& nums)
 		}
 	}
 	return max;
+
+	/*if (nums.size() == 0)
+		return -1;
+	int sum = nums[0];
+	int maxsum = nums[0];
+	for (int i = 1; i < nums.size(); ++i)
+	{
+		if (sum > 0)
+			sum = sum + nums[i];
+		else
+			sum = nums[i];
+		if (maxsum < sum)
+			maxsum = sum;
+	}
+	return maxsum;*/
 }
