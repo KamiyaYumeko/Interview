@@ -69,3 +69,26 @@ bool Solution::isPalindrome(int x)
 
 	}*/
 }
+
+int Solution::maxSubArray(std::vector<int>& nums)
+{
+	int sum;
+	int max=0;
+	for (int i = 0; i < nums.size(); ++i)
+	{
+		sum = nums[i];
+		if (sum>max)
+		{
+			max = sum;
+		}
+		for (int j = i+1; j < nums.size(); ++j)
+		{
+			sum += nums[j];
+			if (sum>max)
+			{
+				max = sum;
+			}
+		}
+	}
+	return max;
+}

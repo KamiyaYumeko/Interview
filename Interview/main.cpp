@@ -18,8 +18,11 @@ int main()
 	// 7. 整数反转
 	//cout << solution.reverse(100000);
 
-	//回文数
-	cout << solution.isPalindrome(1221);
-	
+	// 9.回文数
+	//cout << solution.isPalindrome(1221);
+
+	// 53.最大子序和
+	std::vector<int> i = { 5,0,1 };
+	cout << solution.maxSubArray(i);
 	return 0;
 }
