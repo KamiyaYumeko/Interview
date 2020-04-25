@@ -40,7 +40,19 @@ int Solution::reverse(int x)
 
 bool Solution::isPalindrome(int x)
 {
-	if(x<0)
+	if (x < 0 || 0 == x % 10 && x != 0)
+	{
+		return false;
+	}
+	int res = 0;
+	while (x > res)
+	{
+		res = res * 10 + x % 10;
+		x /= 10;
+	}
+	return x == res || x == res / 10;
+	
+	/*if(x<0)
 	{
 		return false;
 	}
@@ -55,5 +67,5 @@ bool Solution::isPalindrome(int x)
 		}
 		return m == x;
 
-	}
+	}*/
 }
