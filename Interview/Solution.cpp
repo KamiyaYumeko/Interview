@@ -20,23 +20,20 @@ std::vector<int> Solution::twoSum(std::vector<int>& nums, int target)
 
 int Solution::reverse(int x)
 {
-	if (x / 10 == 0)
+	int res = 0;
+	while (x != 0)
 	{
-		return x;
-	}
-
-	auto y = 0;
-	
-	while (x)
-	{
-		if (y > INT_MAX / 10 || y < INT_MIN / 10)
+		int pop = x % 10;
+		x /= 10;
+		if (res > INT_MAX / 10 || (res == INT_MAX / 10 && pop > 7))
 		{
 			return 0;
 		}
-		y *= 10;
-		y += x % 10;
-		x /= 10;
+		if (res < INT_MIN / 10 || (res == INT_MIN / 10 && pop < -8))
+		{
+			return 0;
+		}
+		res = res * 10 + pop;
 	}
-
-	return y;
+	return res;
 }

@@ -16,7 +16,8 @@ int main()
 	//}
 
 	// 7. 整数反转
-	cout << solution.reverse(10000000000LL);
+	//cout << solution.reverse(100000);
+	
 	
 	return 0;
 }
