@@ -19,7 +19,7 @@ int main()
 	//cout << solution.reverse(100000);
 
 	//»ØÎÄÊı
-	cout << solution.isPalindrome(1221);
+	cout << solution.isPalindrome(-121);
 	
 	return 0;
 }
