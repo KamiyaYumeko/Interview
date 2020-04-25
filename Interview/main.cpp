@@ -22,7 +22,8 @@ int main()
 	//cout << solution.isPalindrome(1221);
 
 	// 53.最大子序和
-	//std::vector<int> nums = { 5,0,1 };
-	//cout << solution.maxSubArray(nums);
+	std::vector<int> nums = { 5,0,1 };
+	cout << solution.maxSubArray(nums);
+	
 	return 0;
 }
