@@ -17,7 +17,9 @@ int main()
 
 	// 7. 整数反转
 	//cout << solution.reverse(100000);
-	
+
+	// 9. 回文数
+	cout << solution.isPalindrome(1221);
 	
 	return 0;
 }
